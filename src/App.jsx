@@ -1,5 +1,5 @@
 import s from './App.module.css'
-import img1 from '/01.jpg'
+import img1 from '/01.png'
 import img2 from '/02.jpg'
 import img3 from '/03.jpg'
 
@@ -18,7 +18,7 @@ const navTo = (id) => {
 
   return (
     <>
-      <nav>
+      {/* <nav>
       <span className={s.navItems} onClick={() => navTo("s1")}>
         <i class="fa-solid fa-house"></i>
         <a href='#s1' className={s.navWords}>Jogo</a>
@@ -35,7 +35,14 @@ const navTo = (id) => {
         <i class="fa-solid fa-phone"></i>
         <a href='#s4' className={s.navWords}>Contato</a>
       </span>
-    </nav>
+    </nav> */}
+
+<nav className="nav flex-column">
+  <a className="nav-link active" aria-current="page" href="#">Active</a>
+  <a className="nav-link" href="#">Link</a>
+  <a className="nav-link" href="#">Link</a>
+  <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+</nav>
     <main>
       <section className={s.s1} id="s1">
         <h1>Need for Speed</h1>
